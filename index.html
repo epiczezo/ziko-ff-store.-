@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIKO FF STORE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    header {
+      background-color: #b30000;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #1a1a1a;
+    }
+    nav a {
+      color: #ff3333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #ff3333;
+    }
+    .card-content p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    .price {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ff1a1a;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #cc0000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-top: 1px solid #ff3333;
+    }
+    footer a {
+      color: #ff3333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #payment-section, #about-section, #reviews-section {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      text-align: center;
+    }
+    #payment-section h2, #about-section h2, #reviews-section h2 {
+      color: #ff3333;
+      margin-bottom: 15px;
+    }
+    #payment-section p, #about-section p, #reviews-section p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+    .copy {
+      background-color: #ff1a1a;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    #whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+    }
+    .stars {
+      color: #ffcc00;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>ZIKO FF STORE</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#payment-section">Payment</a>
+    <a href="#about-section">About</a>
+    <a href="#reviews-section">Reviews</a>
+  </nav>
+
+  <section class="container">
+    <div class="card">
+      <img src="https://i.postimg.cc/BQhyMNfk/1762590027886.jpg" alt="Pro Settings" />
+      <div class="card-content">
+        <h3>Pro Headshot Settings</h3>
+        <p>Boost your aim and accuracy with these professional Free Fire settings.</p>
+        <div class="price">EGP 99</div>
+        <a href="#payment-section" class="btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/xCJT1qyq/1762589794779.jpg" alt="Smooth Settings" />
+      <div class="card-content">
+        <h3>Smooth Gameplay Settings</h3>
+        <p>Enhance your FPS and smoothness for perfect gameplay on all phones.</p>
+        <div class="price">EGP 999</div>
+        <a href="#payment-section" class="btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/bvv1LH8t/1762590363274.png" alt="Custom DPI Settings" />
+      <div class="card-content">
+        <h3>Custom DPI Settings</h3>
+        <p>Maximize headshot precision with custom DPI and sensitivity tweaks.</p>
+        <div class="price">EGP 25</div>
+        <a href="#payment-section" class="btn">Buy Now</a>
+        </div>
+      </div>
+<div class="card">
+  <img src="https://i.postimg.cc/d3LpGTN9/1762588870590.jpg" alt="Custom HUD Settings" />
+  <div class="card-content">
+    <h3>Custom HUD Settings</h3>
+    <p>Best Custom HUD Settings For More Control With Screen To All Phones</p>
+    <div class="price">EGP 25</div>
+    <a href="#payment-section" class="btn">Buy Now</a>
+  </div>
+    </div>
+  </section>
+
+  <section id="payment-section">
+    <h2>Payment Instructions</h2>
+    <p>To complete your purchase, please send the amount to our Vodafone Cash number below 👇</p>
+    <p><strong>📞+20 106 054 7421</strong></p>
+    <button class="copy" onclick="copyNumber()">Copy Number</button>
+    <p>After sending the payment, send a screenshot on WhatsApp to confirm your order.</p>
+    <a href="https://wa.me/+201060547421" target="_blank" class="btn">Contact on WhatsApp</a>
+  </section>
+
+  <section id="about-section">
+    <h2>About ZIKO FF STORE</h2>
+    <p>ZIKO FF STORE is your ultimate destination for top-notch Free Fire settings. Our goal is to help players enhance their gameplay, achieve better accuracy, and enjoy smooth performance on any device.</p>
+    <p>We provide high-quality settings, easy payment via Vodafone Cash, and direct support through WhatsApp to ensure a seamless shopping experience.</p>
+  </section>
+
+  <section id="reviews-section">
+    <h2>Customer Reviews</h2>
+    <p class="stars">★★★★★</p>
+    <p>“Amazing settings! My gameplay improved instantly. Highly recommend!” — Ahmed</p>
+    <p class="stars">★★★★★</p>
+    <p>“Best Free Fire settings store. Smooth and easy to use.” — Sara</p>
+    <p class="stars">★★★★★</p>
+    <p>“Fast support and great quality. I’m very satisfied with my purchase.” — Omar</p>
+  </section>
+
+  <footer>
+    <p>💰 Pay via <strong>Vodafone Cash</strong> — Contact us on <a href="https://wa.me/+201060547421" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <div id="whatsapp-float">
+    <a href="https://wa.me/+201060547421" target="_blank">
+      <img src="https://i.imgur.com/3G3w0Iv.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <script>
+    function copyNumber() {
+      navigator.clipboard.writeText('+201060547421');
+      alert('Vodafone Cash number copied!');
+    }
+  </script>
+</body>
+</html>
